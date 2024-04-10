@@ -7,6 +7,7 @@ body{
     flex-direction: column;
     background-color: hsl(0, 0%, 8%);
     font-family:"Inter",sans-serif;
+    padding: 1em;
 }
 .centro{
     display: flex;
@@ -21,7 +22,7 @@ body{
 }
 img{
     border-radius: 50%;
-    width: 5em;
+    width: 10em;
     padding-top: 10px;
 }
 h1{
@@ -39,22 +40,34 @@ h3{
     font-size: 0.9em;
     margin-top: 2px;
 }
-p{
-    padding-bottom: 10px;
-}
-.links{
-    background-color:hsl(0, 0%, 20%);
+
+div.linksContainer{
+    display: flex;
+    background-color:hsl(0, 0%, 12%);
     border-color: black;
     padding: 15px;
     margin: 10px;
     width: 18em;
     text-align: center;
+    color: hsl(0, 0%, 100%);
+    flex-direction: column;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    background-color:hsl(0, 0%, 20%);
+    padding: 0.5em;
+    margin: 0.7em;
     border-radius: 0.5em;
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
 }
 .links:hover{
     background-color: hsl(75, 94%, 57%) ;
     color: hsl(0, 0%, 12%);
+}
+a{
+    text-decoration: none;
 }
 .attribution{
     display: flex;
